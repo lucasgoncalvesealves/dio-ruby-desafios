@@ -1,0 +1,13 @@
+numeros = []
+
+i = 1
+
+1..3.times do
+    print "Digite o #{i}º número: "
+    numeros.push gets.chomp.to_i
+    i += 1
+end
+
+for numero in numeros
+    puts numero ** 3
+end
